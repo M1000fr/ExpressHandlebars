@@ -1,0 +1,1 @@
+export * as msgUpperCase from './msgUpperCase';
