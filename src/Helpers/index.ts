@@ -1,1 +1,1 @@
-export * as msgUpperCase from './msgUpperCase';
+export { default as msgUpperCase } from './msgUpperCase';

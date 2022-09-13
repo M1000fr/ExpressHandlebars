@@ -23,7 +23,7 @@ export class App {
             layoutsDir: path.join(__dirname, './Views/Layouts'),
             partialsDir: path.join(__dirname, './Views/Partials'),
             helpers: Object.keys(Helpers).reduce((acc, key) => {
-                acc[key] = Helpers[key].default;
+                acc[key] = Helpers[key];
                 return acc;
             }, {})
         }).engine);
