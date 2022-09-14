@@ -51,6 +51,10 @@ export class App {
     }
 
     public listen() {
+        if (!this.port) {
+            console.log(`Error, Port on .env as not valide !`);
+            return process.exit();
+        }
         this.app.listen(this.port, () => {
             console.log(`App listening on the port ${this.port}`);
         });
